@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #333;
+	color: #fff;
+	font-family: 'Inconsolata', monospace;
+	margin: 0;
+	padding: 0;
+}
+header, footer {
+	background: #111144;
+}
+h1, h2, h3 {
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+}
+div.formBox {
+	background: #111;
+	color: #eee;
+	margin: 0;
+	padding: 10px 15px;
+}
+.label {
+	padding-right: 10px;
+}
