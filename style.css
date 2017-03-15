@@ -26,3 +26,9 @@ div.formBox {
 .label {
 	padding-right: 10px;
 }
+.show {
+	display: block;
+}
+.hide {
+	display: none;
+}
