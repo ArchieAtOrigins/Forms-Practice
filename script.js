@@ -1,6 +1,6 @@
+// ShowHide functionality
 var sectionA = document.getElementById('showNoShow'); // section listener
 var buttonA = document.getElementById('showAndTell'); // button listener
-
 
 // Hide section using css & js with className change
 var showHide = function() {
@@ -10,9 +10,7 @@ var showHide = function() {
 		sectionA.className = 'show'
 	}
 }
-
-
-// Hide using style.display in js(not currently working)
+// Hide using style.display in js
 // var showHide = function() { 
 // 	if(sectionA.style.display === 'none') {
 // 		sectionA.style.display = 'block';
@@ -22,3 +20,21 @@ var showHide = function() {
 // }
 
 buttonA.addEventListener('click', showHide);
+//***********************************************
+
+// Capture and output text box entry to paragraph
+//  Attach form to var
+var form1 = document.forms.txtbx;
+console.log(form1);
+// Attach input to var
+var input = form1.elements.textBox;
+console.log(input);
+
+form1.addEventListener('submit', captureTxt, false);
+
+function captureTxt(event) {
+	console.log("captureTxt connected" + input.value);
+	var node = document.createTextNode(input.value);
+	txtOutPut.appendChild(node);
+	event.preventDefault();
+}

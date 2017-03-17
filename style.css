@@ -17,15 +17,29 @@ h1, h2, h3 {
 	padding: 10px;
 	text-align: center;
 }
+button {
+	padding: 3px;
+}
 div.formBox {
 	background: #111;
 	color: #eee;
 	margin: 0;
 	padding: 10px 15px;
 }
+#txtOutput {
+	background: #ddd;
+	border-radius: 4px;
+	max-width: 150px;
+	margin-top: 10px;
+	margin-left: 80px;
+	overflow: hidden;
+
+}
 .label {
 	padding-right: 10px;
 }
+
+/* show and hide classes only used on .style.display method in js*/
 .show {
 	display: block;
 }
