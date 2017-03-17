@@ -26,8 +26,9 @@ div.formBox {
 	margin: 0;
 	padding: 10px 15px;
 }
-#txtOutput {
+#para1 {
 	background: #ddd;
+	color: black;
 	border-radius: 4px;
 	max-width: 150px;
 	margin-top: 10px;

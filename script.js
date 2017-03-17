@@ -30,11 +30,13 @@ console.log(form1);
 var input = form1.elements.textBox;
 console.log(input);
 
+var para1 = document.getElementById('para1');
+
 form1.addEventListener('submit', captureTxt, false);
 
 function captureTxt(event) {
 	console.log("captureTxt connected" + input.value);
 	var node = document.createTextNode(input.value);
-	txtOutPut.appendChild(node);
+	para1.appendChild(node);
 	event.preventDefault();
 }
