@@ -40,3 +40,15 @@ function captureTxt(event) {
 	para1.appendChild(node);
 	event.preventDefault();
 }
+
+// Create an array from the checked items in the Menu Selection
+var choices = [];
+var form2 = document.forms.chkbx;
+
+for(var i = 0; i<form2.checkbox.length; i++) {
+	if(form2.checkbox[i].checked) {
+		choices.push(form2.checkbox[i].value);
+	}
+}
+console.log(choices);
+
