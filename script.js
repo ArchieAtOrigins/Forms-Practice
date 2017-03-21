@@ -1,3 +1,4 @@
+// FORM WORLD
 // ShowHide functionality
 var sectionA = document.getElementById('showNoShow'); // section listener
 var buttonA = document.getElementById('showAndTell'); // button listener
@@ -10,7 +11,7 @@ var showHide = function() {
 		sectionA.className = 'show'
 	}
 }
-// Hide using style.display in js
+// Hide using alternate methos of style.display in js
 // var showHide = function() { 
 // 	if(sectionA.style.display === 'none') {
 // 		sectionA.style.display = 'block';
@@ -22,13 +23,13 @@ var showHide = function() {
 buttonA.addEventListener('click', showHide);
 //***********************************************
 
+
+// TEXT BOX
 // Capture and output text box entry to paragraph
 //  Attach form to var
 var form1 = document.forms.txtbx;
-console.log(form1);
 // Attach input to var
 var input = form1.elements.textBox;
-console.log(input);
 
 var para1 = document.getElementById('para1');
 
@@ -40,15 +41,32 @@ function captureTxt(event) {
 	para1.appendChild(node);
 	event.preventDefault();
 }
+// End capture and output text to paragraph
 
+
+// CHECKBOX
 // Create an array from the checked items in the Menu Selection
-var choices = [];
-var form2 = document.forms.chkbx;
+// IN PROGRESS: considering adding eventlistener vs onchange, to capture changes of state of the checkboxes.
 
-for(var i = 0; i<form2.checkbox.length; i++) {
-	if(form2.checkbox[i].checked) {
-		choices.push(form2.checkbox[i].value);
+
+function updateArray() {
+
+	console.log(form2.checkbox.length);
+	var choices = [];
+	var form2 = document.forms.chkbx;
+
+	for(var i = 0; i<form2.checkbox.length; i++) {
+		if(form2.checkbox[i].checked == true) {
+			choices.push(form2.checkbox[i].value);
+		}
 	}
+	// chkbx.addEventListener('change', updateArray);
+
+	console.log(choices);
 }
-console.log(choices);
+updateArray();
+// End create array from checked items
+//************************************
+
+
 
